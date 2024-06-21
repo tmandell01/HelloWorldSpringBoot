@@ -7,12 +7,17 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
-@RequestMapping("/api/v1/tasks")
+@RequestMapping
 public class EntryController {
 
     @GetMapping("/home")
     public String hello() {
         return "Hello, World";
+    }
+
+    @GetMapping("/new")
+    public String New() {
+        return "new";
     }
     
 }
