@@ -19,5 +19,10 @@ public class EntryController {
     public String New() {
         return "new";
     }
+
+    @GetMapping("/test")
+    public String Test() {
+        return "test";
+    }
     
 }
